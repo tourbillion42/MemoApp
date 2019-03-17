@@ -32,22 +32,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글의 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWJ-Ds-KGN">
-                                            <rect key="frame" x="16" y="11" width="155" height="23"/>
+                                            <rect key="frame" x="16" y="11" width="71" height="23"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="23" id="xGq-ut-LQv"/>
+                                                <constraint firstAttribute="height" constant="23" id="cNW-07-Qrh"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글의 내용" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVh-eL-yeV">
-                                            <rect key="frame" x="16" y="48" width="65" height="20.5"/>
+                                            <rect key="frame" x="16" y="48" width="71" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1970-01-01 19:01:30" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud7-xd-s4e">
-                                            <rect key="frame" x="239.5" y="18" width="92.5" height="46"/>
+                                            <rect key="frame" x="172.5" y="18" width="159.5" height="46"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="hOb-t4-8fI"/>
                                             </constraints>
@@ -57,19 +57,24 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="uVh-eL-yeV" firstAttribute="top" secondItem="eWJ-Ds-KGN" secondAttribute="bottom" constant="14" id="6LO-s6-Ab4"/>
-                                        <constraint firstItem="eWJ-Ds-KGN" firstAttribute="top" secondItem="dXI-mn-aaC" secondAttribute="topMargin" id="Aog-zw-uaL"/>
+                                        <constraint firstItem="eWJ-Ds-KGN" firstAttribute="top" secondItem="dXI-mn-aaC" secondAttribute="topMargin" id="16d-tg-c7s"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ud7-xd-s4e" secondAttribute="trailing" constant="1" id="Bzt-yU-kxI"/>
                                         <constraint firstItem="uVh-eL-yeV" firstAttribute="leading" secondItem="dXI-mn-aaC" secondAttribute="leadingMargin" id="CBc-xD-fW7"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="uVh-eL-yeV" secondAttribute="bottom" constant="0.5" id="DUs-IO-HFL"/>
-                                        <constraint firstItem="eWJ-Ds-KGN" firstAttribute="leading" secondItem="uVh-eL-yeV" secondAttribute="leading" id="Yd7-f8-TNg"/>
-                                        <constraint firstItem="ud7-xd-s4e" firstAttribute="leading" secondItem="eWJ-Ds-KGN" secondAttribute="trailing" constant="68.5" id="cxx-cL-uwJ"/>
+                                        <constraint firstItem="uVh-eL-yeV" firstAttribute="top" secondItem="eWJ-Ds-KGN" secondAttribute="bottom" constant="14" id="NBl-1B-ndS"/>
+                                        <constraint firstItem="eWJ-Ds-KGN" firstAttribute="leading" secondItem="uVh-eL-yeV" secondAttribute="leading" id="leB-et-MYl"/>
                                         <constraint firstItem="ud7-xd-s4e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uVh-eL-yeV" secondAttribute="trailing" constant="8" symbolic="YES" id="vtm-DT-m4c"/>
                                         <constraint firstItem="ud7-xd-s4e" firstAttribute="top" secondItem="dXI-mn-aaC" secondAttribute="topMargin" constant="7" id="wv6-CI-u2A"/>
-                                        <constraint firstItem="ud7-xd-s4e" firstAttribute="leading" secondItem="uVh-eL-yeV" secondAttribute="trailing" constant="158.5" id="xZQ-uo-dxS"/>
+                                        <constraint firstItem="ud7-xd-s4e" firstAttribute="leading" secondItem="uVh-eL-yeV" secondAttribute="trailing" constant="85.5" id="xZQ-uo-dxS"/>
                                         <constraint firstItem="ud7-xd-s4e" firstAttribute="centerY" secondItem="dXI-mn-aaC" secondAttribute="centerY" constant="1.25" id="ynl-7j-uyg"/>
+                                        <constraint firstItem="uVh-eL-yeV" firstAttribute="trailing" secondItem="eWJ-Ds-KGN" secondAttribute="trailing" id="zb4-Gf-Qyd"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="uVh-eL-yeV" id="MD6-pc-dhr"/>
+                                    <outlet property="regdate" destination="ud7-xd-s4e" id="PDH-nd-CWM"/>
+                                    <outlet property="subject" destination="eWJ-Ds-KGN" id="FYb-sw-YFI"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="Zc0-d8-Naq" customClass="MemoCell" customModule="MemoApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -79,9 +84,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글의 내용 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLN-rT-VCR">
-                                            <rect key="frame" x="87" y="48" width="68" height="20.5"/>
+                                            <rect key="frame" x="87" y="48" width="119" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="20.5" id="miX-rb-LOB"/>
+                                                <constraint firstAttribute="height" constant="21" id="gvM-1w-2Bb"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="mAM-Ou-FjN"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -114,22 +120,28 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="MLN-rT-VCR" firstAttribute="top" secondItem="1oH-hM-5R5" secondAttribute="bottom" constant="14" id="1Wt-8P-0K6"/>
+                                        <constraint firstItem="MLN-rT-VCR" firstAttribute="bottom" secondItem="agj-LA-QUn" secondAttribute="bottom" id="2LM-7M-AkZ"/>
+                                        <constraint firstItem="uz5-fe-6bH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MLN-rT-VCR" secondAttribute="trailing" constant="8" symbolic="YES" id="42K-tY-aqR"/>
                                         <constraint firstItem="uz5-fe-6bH" firstAttribute="top" secondItem="ivK-AD-WLc" secondAttribute="topMargin" constant="5" id="4Ew-fO-xGd"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="MLN-rT-VCR" secondAttribute="bottom" constant="0.5" id="7fr-ZK-daT"/>
                                         <constraint firstItem="agj-LA-QUn" firstAttribute="bottom" secondItem="ivK-AD-WLc" secondAttribute="bottomMargin" id="Ab6-YY-QRj"/>
+                                        <constraint firstItem="MLN-rT-VCR" firstAttribute="top" secondItem="ivK-AD-WLc" secondAttribute="top" constant="48" id="JlP-UD-zgc"/>
                                         <constraint firstItem="agj-LA-QUn" firstAttribute="top" secondItem="ivK-AD-WLc" secondAttribute="topMargin" id="MsT-eG-Khh"/>
                                         <constraint firstItem="uz5-fe-6bH" firstAttribute="trailing" secondItem="ivK-AD-WLc" secondAttribute="trailingMargin" id="U4x-3S-ap5"/>
-                                        <constraint firstItem="uz5-fe-6bH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MLN-rT-VCR" secondAttribute="trailing" constant="8" symbolic="YES" id="UXV-tR-Qt9"/>
                                         <constraint firstItem="agj-LA-QUn" firstAttribute="leading" secondItem="ivK-AD-WLc" secondAttribute="leadingMargin" id="Vgh-r9-gA7"/>
-                                        <constraint firstItem="MLN-rT-VCR" firstAttribute="leading" secondItem="agj-LA-QUn" secondAttribute="trailing" constant="8" id="X2x-VE-9Lo"/>
-                                        <constraint firstItem="MLN-rT-VCR" firstAttribute="top" secondItem="1oH-hM-5R5" secondAttribute="bottom" constant="14" id="Zca-Lr-HJK"/>
                                         <constraint firstItem="uz5-fe-6bH" firstAttribute="leading" secondItem="1oH-hM-5R5" secondAttribute="trailing" constant="40" id="Ze7-TZ-8YH"/>
+                                        <constraint firstItem="MLN-rT-VCR" firstAttribute="leading" secondItem="1oH-hM-5R5" secondAttribute="leading" id="fC1-Wl-30h"/>
                                         <constraint firstItem="1oH-hM-5R5" firstAttribute="leading" secondItem="agj-LA-QUn" secondAttribute="trailing" constant="8" id="fEW-t8-b62"/>
                                         <constraint firstItem="1oH-hM-5R5" firstAttribute="top" secondItem="ivK-AD-WLc" secondAttribute="topMargin" id="fkx-gJ-tig"/>
-                                        <constraint firstItem="MLN-rT-VCR" firstAttribute="leading" secondItem="agj-LA-QUn" secondAttribute="trailing" constant="8" id="fu1-vG-IGw"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="uz5-fe-6bH" secondAttribute="bottom" constant="4" id="vm5-Ys-Wej"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="MLN-rT-VCR" id="QoK-LU-9ug"/>
+                                    <outlet property="img" destination="agj-LA-QUn" id="JyX-Fw-mNo"/>
+                                    <outlet property="regdate" destination="uz5-fe-6bH" id="TE1-cG-AHE"/>
+                                    <outlet property="subject" destination="1oH-hM-5R5" id="fnu-tW-TS8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
