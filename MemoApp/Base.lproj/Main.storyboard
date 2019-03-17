@@ -228,7 +228,7 @@
         <!--상세 화면-->
         <scene sceneID="Zi5-Kh-Wgi">
             <objects>
-                <viewController title="상세 화면" id="9Gv-of-zRh" customClass="MemoReadVC" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" title="상세 화면" id="9Gv-of-zRh" customClass="MemoReadVC" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dto-4K-glg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,6 +275,11 @@
                         <viewLayoutGuide key="safeArea" id="7Aw-hg-7Zn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="XDW-sb-lnS"/>
+                    <connections>
+                        <outlet property="contents" destination="Bdg-b7-j6u" id="MXR-jK-2kb"/>
+                        <outlet property="img" destination="FDG-bi-QMi" id="1M7-oM-M6f"/>
+                        <outlet property="subject" destination="8ij-Li-RmG" id="Bps-yA-sMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZZ-pN-GZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
