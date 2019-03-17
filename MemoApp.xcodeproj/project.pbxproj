@@ -15,6 +15,7 @@
 		477E1693223E8C8600573CF7 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E1692223E8C8600573CF7 /* MemoFormVC.swift */; };
 		477E1695223E8CCF00573CF7 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E1694223E8CCF00573CF7 /* MemoReadVC.swift */; };
 		477E1697223E8D2800573CF7 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E1696223E8D2800573CF7 /* MemoCell.swift */; };
+		477E1699223E8F7400573CF7 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E1698223E8F7400573CF7 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		477E1692223E8C8600573CF7 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
 		477E1694223E8CCF00573CF7 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		477E1696223E8D2800573CF7 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		477E1698223E8F7400573CF7 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				477E1696223E8D2800573CF7 /* MemoCell.swift */,
 				477E1692223E8C8600573CF7 /* MemoFormVC.swift */,
 				477E1694223E8CCF00573CF7 /* MemoReadVC.swift */,
+				477E1698223E8F7400573CF7 /* MemoData.swift */,
 			);
 			path = MemoApp;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				477E167F223E7CA900573CF7 /* AppDelegate.swift in Sources */,
 				477E1697223E8D2800573CF7 /* MemoCell.swift in Sources */,
 				477E1691223E8C5A00573CF7 /* MomoLlistVC.swift in Sources */,
+				477E1699223E8F7400573CF7 /* MemoData.swift in Sources */,
 				477E1695223E8CCF00573CF7 /* MemoReadVC.swift in Sources */,
 				477E1693223E8C8600573CF7 /* MemoFormVC.swift in Sources */,
 			);
