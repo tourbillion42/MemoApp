@@ -13,7 +13,7 @@
         <!--목록-->
         <scene sceneID="d5a-5m-v94">
             <objects>
-                <tableViewController id="jpO-zf-zvf" sceneMemberID="viewController">
+                <tableViewController id="jpO-zf-zvf" customClass="MomoLlistVC" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9og-cR-n0v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
         <!--메모 작성-->
         <scene sceneID="F7B-rv-PVj">
             <objects>
-                <viewController id="Oz5-sb-ObA" sceneMemberID="viewController">
+                <viewController id="Oz5-sb-ObA" customClass="MemoFormVC" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMS-UK-wdG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,17 +191,32 @@
                         <viewLayoutGuide key="safeArea" id="aBf-rn-pTt"/>
                     </view>
                     <navigationItem key="navigationItem" title="메모 작성" id="BLY-lL-CDW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ehI-4r-ekJ"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="ehI-4r-ekJ">
+                                <connections>
+                                    <action selector="pick:" destination="Oz5-sb-ObA" id="tro-Ei-DaX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="저장" id="eWo-09-XUR">
+                                <connections>
+                                    <action selector="save:" destination="Oz5-sb-ObA" id="3Tp-x6-BA2"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contents" destination="N7a-JZ-OmL" id="TxI-i1-LPf"/>
+                        <outlet property="preview" destination="Px9-Sz-LqE" id="4df-yu-Q4u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxj-jZ-TKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2317.5999999999999" y="358.4707646176912"/>
+            <point key="canvasLocation" x="2319" y="361"/>
         </scene>
         <!--상세 화면-->
         <scene sceneID="Zi5-Kh-Wgi">
             <objects>
-                <viewController title="상세 화면" id="9Gv-of-zRh" sceneMemberID="viewController">
+                <viewController title="상세 화면" id="9Gv-of-zRh" customClass="MemoReadVC" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dto-4K-glg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
